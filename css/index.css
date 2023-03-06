@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Verdana, Geneva, Tahoma, Helvetica, sans-serif;
+}
+
+:root {
+  --primary: #ececec;
+  --secondary: #eaeaea;
+  --accent: #ffde3d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-image: url("https://wallpaperaccess.com/full/2043824.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 4rem;
+  border-bottom: 1px solid gray;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo > img {
+  width: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+  background-color: var(--accent);
+}
+
+main {
+  padding: 0 4.5rem;
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.title > h1 {
+  padding: 2rem;
+  font-size: 3.5rem;
+}
+
+.title > p {
+  padding: 2rem;
+  opacity: 60%;
+}
+
+.about-contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 75%;
+}
+
+.slider {
+  width: 600px;
+  border: 1px solid red;
+}
+
+.slider > img {
+  width: 600px;
+}
+
+.contact {
+  flex: 25%;
+  background-color: var(--secondary);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.contact-title {
+  margin-bottom: 2.5rem;
+}
+
+.contact-title > h3 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-title > p {
+  opacity: 60%;
+}
+
+.contact-form > input, select {
+    padding: 1rem;
+    margin: 0.5rem 0 1.5rem;
+    border-radius: .5rem;
+    border: 1px solid lightblue;
+    width: 100%;
+}
+
+.contact-form > select:focus {
+    border: 1px solid var(--accent);
+}
+
+.contact-form > button {
+    padding: 1rem;
+    margin: 0.5rem 0 1.5rem;
+    border-radius: .5rem;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+
+.contact-form > button:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+    letter-spacing: 0.1rem;    
+}
