@@ -1,16 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: inherit;
   font-family: 'Shantell Sans', cursive;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: var(--font);
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 :root {
-  --primary: #ececec;
-  --secondary: #eaeaea;
+  --primary: #fffcfc;
+  --secondary: #41ead4;
   --accent: #ffde3d;
+  --font: #011627;
+  --strong: #f71735;
+
 }
 
 html {
@@ -21,12 +44,14 @@ body {
   /* background-image: url("https://wallpaperaccess.com/full/2043824.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  line-height: 1;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 4rem;
+  background-color: var(--secondary);
 }
 
 .logo {
@@ -69,6 +94,7 @@ main {
 .title > h1 {
   padding: 2rem;
   font-size: 3.5rem;
+  font-weight: 600;
 }
 
 .title > p {
@@ -85,17 +111,18 @@ main {
 .about-information {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex: 75%;
 }
 
-.slider {
-  width: 600px;
+.about-information .slider {
+  width: 100%;
 }
 
-.slider > img {
-  width: 600px;
+.about-information .slider > img {
+  object-fit: cover;
+  width: inherit;
 }
 
 .quote {
@@ -114,7 +141,7 @@ blockquote {
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .user .user-profile > img {
@@ -123,13 +150,58 @@ blockquote {
   border-radius: 50%;
   object-fit: cover;
   padding: 2px;
-  border: 1px solid var(--accent);
-  /* box-shadow: ; */
+  border: 1px solid var(--secondary);
+  box-shadow: 0px 0px 100px 1px var(--accent);
+}
+
+.user .user-info {
+  line-height: 1.5rem;
+}
+
+.user .user-info > h4 {
+  font-weight: 600;
+}
+
+.user .user-info > p {
+  font-style: italic;
+  opacity: 50%;
 }
 
 hr {
-  width: 7rem;
+  width: 8rem;
   margin: auto;
+  border: 1px solid var(--secondary);
+}
+
+.feature {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+  opacity: 65%;
+}
+
+ul {
+  list-style: none;
+}
+
+.feature .nomor > li {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  background-color: var(--secondary);
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 300;
+}
+
+.feature .feature-list > li {
+  height: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 .contact {
@@ -137,6 +209,7 @@ hr {
   background-color: var(--secondary);
   border-radius: 1rem;
   padding: 3rem;
+  height: 600px;
 }
 
 .contact-title {
@@ -145,6 +218,8 @@ hr {
 
 .contact-title > h3 {
   margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .contact-title > p {
@@ -176,4 +251,24 @@ select {
   background-color: var(--accent);
   transform: scale(1.05);
   letter-spacing: 0.1rem;
+}
+
+#package {
+  padding: 0;
+}
+
+.package-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: var(--secondary);
+  text-align: center;
+}
+
+.package-title > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  
 }

@@ -33,28 +33,39 @@
         <div class="about-contact">
           <div class="about-information">
             <div class="slider">
-              <img src="https://travelspromo.com/wp-content/uploads/2019/12/Tugu-Jogja-waktu-senja-Fatchur-Rozi-1024x681.jpg" alt="slide-img" />
+              <img
+                src="https://travelspromo.com/wp-content/uploads/2019/12/Tugu-Jogja-waktu-senja-Fatchur-Rozi-1024x681.jpg"
+                alt="slide-img"
+              />
             </div>
             <div class="quote">
-              <blockquote>Kerjaan buat kepalamu pening? Sudah saatnya kau healing</blockquote>
+              <blockquote>
+                Kerjaan buat kepalamu pening? Sudah saatnya kau healing
+              </blockquote>
               <div class="user">
                 <div class="user-profile">
-                  <img src="/assets/img/ramintenedited.jpeg" alt="user-pic" />
+                  <img src="/assets/img/helmi.jpg" alt="user-pic" />
                 </div>
                 <div class="user-info">
-                  <h4>Pakdhe Raminten</h4>
-                  <p>Wanita jadi-jadian, setengah baya</p>
+                  <h4>Helmi Ainun</h4>
+                  <p>Father wanne be, 31</p>
                 </div>
               </div>
               <hr />
             </div>
             <div class="information">
-              <p>
+              <h3>
                 Use this space to provides users more information about your
-                offer
-              </p>
+                offer. Consider it a follow-up to your headline and explain the
+                benefits of your service or product
+              </h3>
               <div class="feature">
-                <ul>
+                <ul class="nomor">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+                <ul class="feature-list">
                   <li>Your first feature</li>
                   <li>Your second feature</li>
                   <li>Your more feature</li>
@@ -67,18 +78,18 @@
               <h3>Contact Us</h3>
               <p>Feel free to get in touch with us.</p>
             </div>
-            <form class="contact-form">
-              <label>Your Name:</label><br>
-              <input type="text" placeholder="First and last name" /><br>
-              <label>Email Address:</label><br>
-              <input type="email" placeholder="example@email.com" /><br>
-              <label>What are you interest in?</label><br>
-              <select>
-                <option value="" selected>choose one</option>
+            <form class="contact-form" onsubmit="validateForm()" >
+              <label>Your Name:</label><br />
+              <input id="nama" type="text" value="" placeholder="First and last name" /><br />
+              <label>Email Address:</label><br />
+              <input id="email" type="email" value="" placeholder="example@email.com" /><br />
+              <label>What are you interest in?</label><br />
+              <select id="interest">
+                <option value="" selected>Choose one</option>
                 <option value="city">City</option>
                 <option value="mountain">Mountain</option>
-                <option value="beach">Beach</option>
-              </select><br>
+                <option value="beach">Beach</option></select
+              ><br />
               <button type="submit"><b>SEND</b></button>
             </form>
           </div>
@@ -87,57 +98,79 @@
 
       <section id="package">
         <div class="package-title">
-
+          <h1>Our Packages</h1>
         </div>
         <div class="packages">
-          <h1>Our Packages</h1>
-          <div class="destination">
+          <card class="destination">
             <div class="icon"></div>
             <div class="destination-city">
               <h5>Bali</h5>
-              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+              <p>
+                Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
             </div>
-          </div>
-          <div class="destination">
+          </card>
+          <card class="destination">
             <div class="icon"></div>
             <div class="destination-city">
               <h5>Bali</h5>
-              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+              <p>
+                Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
             </div>
-          </div>
-          <div class="destination">
+          </card>
+          <card class="destination">
             <div class="icon"></div>
             <div class="destination-city">
               <h5>Bali</h5>
-              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+              <p>
+                Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
             </div>
-          </div>
-          <div class="destination">
+          </card>
+          <card class="destination">
             <div class="icon"></div>
             <div class="destination-city">
               <h5>Bali</h5>
-              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+              <p>
+                Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
             </div>
-          </div>
-          <div class="destination">
+          </card>
+          <card class="destination">
             <div class="icon"></div>
             <div class="destination-city">
               <h5>Bali</h5>
-              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+              <p>
+                Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
             </div>
-          </div>
-          <div class="destination">
+          </card>
+          <card class="destination">
             <div class="icon"></div>
             <div class="destination-city">
               <h5>Bali</h5>
-              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+              <p>
+                Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
             </div>
-          </div>
+          </card>
         </div>
       </section>
       <section id="closing">
         <h1>Closing Argument Headline</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus velit necessitatibus illo. Ex, voluptates assumenda! Voluptates hic tempora, veritatis quis nisi deserunt officiis doloremque ipsam aliquid ducimus illum quas autem.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          velit necessitatibus illo. Ex, voluptates assumenda! Voluptates hic
+          tempora, veritatis quis nisi deserunt officiis doloremque ipsam
+          aliquid ducimus illum quas autem.
+        </p>
         <button id="call-action" type="button">CALL TO ACTION</button>
       </section>
     </main>
@@ -155,5 +188,7 @@
         <p>@2023 Travel Agents</p>
       </div>
     </footer>
+    
+    <script src="script.js"></script>
   </body>
 </html>
