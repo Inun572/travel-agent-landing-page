@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-family: Verdana, Geneva, Tahoma, Helvetica, sans-serif;
+  font-family: 'Shantell Sans', cursive;
 }
 
 :root {
@@ -26,7 +27,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 4rem;
-  border-bottom: 1px solid gray;
 }
 
 .logo {
@@ -92,11 +92,44 @@ main {
 
 .slider {
   width: 600px;
-  border: 1px solid red;
 }
 
 .slider > img {
   width: 600px;
+}
+
+.quote {
+  padding-bottom: 2rem;
+}
+
+blockquote {
+  padding: 1.5rem;
+  font-style: italic;
+  opacity: 65%;
+}
+
+.user {
+  display: flex;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user .user-profile > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 2px;
+  border: 1px solid var(--accent);
+  /* box-shadow: ; */
+}
+
+hr {
+  width: 7rem;
+  margin: auto;
 }
 
 .contact {
@@ -118,29 +151,29 @@ main {
   opacity: 60%;
 }
 
-.contact-form > input, select {
-    padding: 1rem;
-    margin: 0.5rem 0 1.5rem;
-    border-radius: .5rem;
-    border: 1px solid lightblue;
-    width: 100%;
+.contact-form > input,
+select {
+  padding: 1rem;
+  margin: 0.5rem 0 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightblue;
+  width: 100%;
 }
 
 .contact-form > select:focus {
-    border: 1px solid var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .contact-form > button {
-    padding: 1rem;
-    margin: 0.5rem 0 1.5rem;
-    border-radius: .5rem;
-    width: 100%;
-    transition: all 0.3s ease-out;
+  padding: 1rem;
+  margin: 0.5rem 0 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  transition: all 0.3s ease-out;
 }
 
-
 .contact-form > button:hover {
-    background-color: var(--accent);
-    transform: scale(1.05);
-    letter-spacing: 0.1rem;    
+  background-color: var(--accent);
+  transform: scale(1.05);
+  letter-spacing: 0.1rem;
 }
