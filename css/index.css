@@ -82,13 +82,13 @@ body {
   background-color: var(--accent);
 }
 
-main {
+#home {
   padding: 0 4.5rem;
 }
 
 .title {
   text-align: center;
-  padding: 1rem;
+  padding: 4.5rem 0;
 }
 
 .title > h1 {
@@ -262,7 +262,7 @@ select {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 8rem;
+  height: 300px;
   background-color: var(--secondary);
   text-align: center;
 }
@@ -270,5 +270,42 @@ select {
 .package-title > h1 {
   font-size: 3rem;
   font-weight: 500;
-  
+}
+
+.packages {
+  padding: 2.5rem 4.5rem 1rem 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+card {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.icon {
+  background-color: var(--secondary);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+  fill: var(--accent);
+}
+
+.destination-city > h5 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.destination-city > p {
+  opacity: 65%;
+  font-size: 1rem;
 }
