@@ -41,17 +41,20 @@ html {
 }
 
 body {
-  /* background-image: url("https://wallpaperaccess.com/full/2043824.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 4rem;
-  background-color: var(--secondary);
+  /* background-color: transparent; */
 }
 
 .logo {
@@ -87,8 +90,13 @@ body {
 }
 
 .title {
-  text-align: center;
-  padding: 4.5rem 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0 4.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .title > h1 {
@@ -133,6 +141,7 @@ blockquote {
   padding: 1.5rem;
   font-style: italic;
   opacity: 65%;
+  font-size: 1.25rem;
 }
 
 .user {
@@ -308,4 +317,39 @@ card {
 .destination-city > p {
   opacity: 65%;
   font-size: 1rem;
+}
+
+#closing {
+  padding: 4.5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#closing > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#closing > p {
+  text-align: center;
+  margin: 3rem;
+}
+
+#call-us {
+  color: var(--font);
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  border-radius: 4px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
