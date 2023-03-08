@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Pulang pegi</title>
+    <link rel="favicon" href="./assets/icon/logo.PNG" />
+    <title>Temanz Healingz</title>
   </head>
   <body>
     <!-- Navigation Bar -->
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img src="./assets/img/logo.PNG" alt="logo" class="logo" />
-          Revou Travel Agents
+          <img src="./assets/icon/logo.PNG" alt="logo" class="logo" />
+          <span>Temanz</span>Healingz
         </div>
         <div class="nav-menu">
           <a href="#home" class="nav-link active">Home</a>
@@ -26,16 +27,28 @@
     <!-- Content -->
     <main>
       <section id="home">
-        <div class="title">
-          <h1>Your Trusted Travel Agent's</h1>
-          <p>Your happiness is our happiness</p>
+        <div class="hero">
+          <div class="slider">
+            <div class="slides">
+              <img src="./assets/img/1.JPG" alt="parangtritis" class="img-slide active" />
+              <img src="./assets/img/2.JPG" alt="gumuk pasir" class="img-slide" />
+              <img src="./assets/img/3.JPG" alt="tamansari" class="img-slide"/>
+              <img src="./assets/img/4.JPG" alt="prambanan" class="img-slide" />
+              <img src="./assets/img/5.JPG" alt="merapi" class="img-slide" />
+              <img src="./assets/img/6.JPG" alt="goa pindul" class="img-slide" />
+            </div>
+          </div>
+          <div class="title">
+            <h1>Teman Healing Ternyaman Anda</h1>
+            <p>Your happiness is our happiness</p>
+          </div>
         </div>
         <div class="about-contact">
           <div class="about-information">
             <div class="slider">
               <img
                 src="https://travelspromo.com/wp-content/uploads/2019/12/Tugu-Jogja-waktu-senja-Fatchur-Rozi-1024x681.jpg"
-                alt="slide-img"
+                alt="tugu jogja"
               />
             </div>
             <div class="quote">
@@ -78,29 +91,31 @@
               <h3>Contact Us</h3>
               <p>Feel free to get in touch with us.</p>
             </div>
-            <form class="contact-form" onsubmit="validateForm()">
-              <label>Your Name:</label><br />
+            <form name="message" class="contact-form" onsubmit="validateForm()">
+              <label for="nama">Nama kamu:</label><br />
               <input
+                name="nama"
                 id="nama"
                 type="text"
                 value=""
                 placeholder="First and last name"
               /><br />
-              <label>Email Address:</label><br />
+              <label for="email">Email:</label><br />
               <input
+                name="email"
                 id="email"
                 type="email"
                 value=""
                 placeholder="example@email.com"
               /><br />
-              <label>What are you interest in?</label><br />
-              <select id="interest">
+              <label for="interest">Apa yang kamu sukai?</label><br />
+              <select name="interest" id="interest">
                 <option value="" selected>Choose one</option>
                 <option value="city">City</option>
                 <option value="mountain">Mountain</option>
                 <option value="beach">Beach</option></select
               ><br />
-              <button type="submit"><b>SEND</b></button>
+              <button for="message" type="submit"><b>SEND</b></button>
             </form>
           </div>
         </div>
@@ -250,14 +265,14 @@
     <!-- Footer -->
     <footer>
       <div class="logo">
-        <img src="./assets/img/logo.PNG" alt="logo" class="logo" />
+        <img src="./assets/icon/logo.PNG" alt="logo" class="logo" />
       </div>
       <div class="internal-link">
         <a href="#">Term of Service</a>
         <a href="#">Privacy Policy</a>
       </div>
       <div class="copyright">
-        <p>@2023 Travel Agents</p>
+        <p>Copyright@2023 Temanz Healingz</p>
       </div>
     </footer>
 
