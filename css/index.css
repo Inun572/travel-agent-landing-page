@@ -93,6 +93,7 @@ body {
   color: var(--primary);
   padding: 1rem;
   border-radius: 0.5rem;
+  font-size: 1.25rem;
   transition: all .5s ease-in;
 }
 
@@ -131,10 +132,11 @@ body {
   transition: all 1s ease-in;
 }
 
+
 .hero .slider .slides > img:not(.active) {
   top: 0;
-  left: -100%;
-  transition: all 1s ease-in;  
+  left: 100%;
+  transform: translateX(100%);
 }
 
 .hero .title {
