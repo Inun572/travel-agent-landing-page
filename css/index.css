@@ -129,14 +129,14 @@ body {
   position: absolute;
   z-index: 1;
   object-fit: cover;
-  transition: all 1s ease-in;
+  transition: all 1s ease-in-out;
 }
 
 
 .hero .slider .slides > img:not(.active) {
   top: 0;
-  left: 100%;
-  transform: translateX(100%);
+  left: -100%;
+  transform: translateX(-100%);
 }
 
 .hero .title {

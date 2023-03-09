@@ -17,7 +17,6 @@ const validateForm = () => {
 var slideIndex = 1;
 
 let imgList = document.getElementsByClassName('img-slide');
-console.log(imgList[5]);
 
 const slider = () => {
 
