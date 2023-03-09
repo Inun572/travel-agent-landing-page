@@ -414,4 +414,13 @@ footer {
   gap: 1rem;
 }
 
- 
+/* laptop 1024px */
+@media screen and (min-width: 1024px) {
+  
+}
+
+/* tablet 768px */
+@media screen and (min-width: 768px) {
+  
+}
+
