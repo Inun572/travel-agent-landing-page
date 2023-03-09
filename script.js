@@ -17,20 +17,22 @@ const validateForm = () => {
 var slideIndex = 1;
 
 let imgList = document.getElementsByClassName('img-slide');
+console.log(imgList[5]);
 
 const slider = () => {
-  // imgList[slideIndex].classList.add('active');
+
+  if (slideIndex != 0) {
+    imgList[slideIndex-1].classList.remove('active');
+  }
+  
   if (slideIndex > imgList.length-1) {
     slideIndex = 0;
-  } else {
-    imgList[slideIndex].classList.add('active');
-    console.log(imgList[slideIndex]);
-    slideIndex++;
+    imgList[imgList.length-1].classList.remove('active');
   }
 
-  imgList[slideIndex].classList.remove('active');
+  imgList[slideIndex].classList.add('active');
+  slideIndex++;
 
-  console.log(imgList[slideIndex]);
 }
 
 setInterval( () => {
