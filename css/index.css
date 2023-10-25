@@ -47,6 +47,10 @@ body {
   line-height: 1;
 }
 
+header {
+  transition: all;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -58,7 +62,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -194,9 +198,10 @@ body {
 
 .about-contact {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   gap: 2rem;
-  padding: 0 4.5rem;
+  padding: 0 2rem 2rem;
 }
 
 .about-information {
@@ -300,7 +305,7 @@ ul {
   flex: 25%;
   background-color: var(--secondary);
   border-radius: 1rem;
-  padding: 3rem;
+  padding: 2rem;
   height: 600px;
 }
 
@@ -464,6 +469,29 @@ footer {
 
   .nav-link {
     width: max-content;
+  }
+
+  .about-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 3rem;
+  }
+
+  .about-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 60%;
+  }
+
+  .contact {
+    flex: 40%;
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 600px;
   }
 }
 
